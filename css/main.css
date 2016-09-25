@@ -1,0 +1,295 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+    background-image: url("../img/fondo1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+
+#home{
+    background: rgb(1,9,51) 50% 0;
+    height: 710px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10%;
+    z-index: -1;
+}
+
+#section2{
+    height: 750px;
+    width: 100%;
+    margin-bottom: 10%;
+    background: rgb(2,79,75) 50% 0;
+    position: relative;
+    z-index: 1;
+
+}
+
+#section3{
+    background: rgb(129,165,55) 50% 0;
+    height: 750px;
+    width: 100%;
+    margin-bottom: 10%;
+    position: relative;
+    z-index: 1;
+}
+
+#section4{
+    background: rgb(214,217,74) 50% 0;
+    height: 750px;
+    width: 100%;
+    margin-bottom: 10%;
+    position: relative;
+    z-index: 1;
+}
+
+#section5{
+    background: rgb(216,223,143) 50% 0;
+    height: 750px;
+    width: 100%;
+    margin-bottom: 10%;
+    position: relative;
+    z-index: 1;
+}
+
+.sect3{
+    position: relative;
+    top: 50px;
+    left: 40%;
+}
+
+#canvas{
+     border: 10px solid rgb(1,9,51);
+     cursor: pointer;
+     width: 500px;
+     height: 500px;
+     background: #fff;
+     margin-left: 25%;
+     margin-top: 20%;
+     box-shadow: 0px 0px 20px #2F4F4F;
+}
+
+.herramientas{
+     width: 100px;
+}
+
+.btn{
+     background-color: rgb(1,9,51);
+     margin: 9px;
+     box-shadow: 0px 0px 20px #2F4F4F;
+     position: relative;
+     left: 150px;
+}
+
+#lapiz{
+     width: 150px;
+     height: 150px;
+}
+
+.tamanop{
+     background-color: rgb(1,9,51);
+     box-shadow: 0px 0px 20px #2F4F4F;
+     position: relative;
+	 left: 150px;
+}
+
+#tamano{
+	 background-color: rgb(216,223,143);
+     margin: 15px;
+     cursor: pointer;
+     width: 10px; 
+     height: 10px;
+     border-radius: 100%;
+
+
+}
+
+#tamano1{
+	 background-color: rgb(216,223,143);
+     margin: 10px;
+     cursor: pointer;
+     width: 30px; 
+     height: 30px;
+     border-radius: 100%;
+
+}
+
+#tamano2{
+	 background-color: rgb(216,223,143);
+     margin: 10px;
+     cursor: pointer;
+     width: 40px; 
+     height: 40px;
+     border-radius: 100%;
+
+}
+
+#tamano3{
+	 background-color: rgb(216,223,143);
+     margin: 10px;
+     cursor: pointer;
+     width: 50px; 
+     height: 50px;
+	 border-radius: 100%;
+
+}
+
+#colores{
+	margin-left: 80%;
+	position: relative;
+	top: -50px;
+}
+
+#descargar{
+	margin-left: 80%;
+    margin-top: 10px;
+	width: 100px;
+	padding: 10px;
+	border-radius: 10%;
+	font-weight: bolder;
+	color: rgb(1,9,51);
+    box-shadow: 0px 0px 20px #2F4F4F;
+}
+
+
+ #borrador{
+     width: 150px;
+     height: 150px;
+}
+
+.texto{
+	 width: 80%;
+     margin: auto;
+     margin-top: 2%;
+     margin-left: 10%;
+     border: 1px solid rgb(1,9,51);
+     padding: 10px 20px;
+     box-sizing: border-box;
+     word-wrap: break-word;
+     background: #ffffff;
+}
+
+.h2{
+    position: relative;
+    top:8%;
+    margin-left:35%;
+}
+
+form{
+	 width: 80%;
+     margin: auto;
+     padding: 10px 20px;
+     box-sizing: border-box;
+     margin-left: 10%;
+     border-radius: 7px;
+     background: rgb(1,9,51);
+     margin-top: 10%;
+
+
+}
+
+textarea{
+     width: 100%;
+     margin-bottom: 20px;
+     padding: 7px;
+     box-sizing: border-box;
+     border-radius: 7px;
+     font-size: 17px;
+     min-height: 20px;
+     max-height: 160px; 
+     max-width: 100%;
+     overflow: hidden;
+}
+
+#resultado{
+     background: rgb(216,223,143);
+     font-weight: bolder;
+     padding : 10px 20px;
+     border-radius: 10px;
+
+}
+
+#resultado:hover{
+	cursor: pointer;
+}
+
+#contar{
+    background: rgb(216,223,143);
+	width: 7%;
+	text-align: center;
+	position: relative;
+	top: -7%;
+	left: 80%;
+	padding : 6px 10px;
+    border-radius: 10px;
+
+
+}
+.hora{
+	 width: 80%;
+     margin: auto;
+     margin-left: 10%;
+     box-sizing: border-box;
+     word-wrap: break-word;
+     font-size: 1em;
+  	 background: rgb(1,9,51) 50% 0;
+  	 color: white;
+}
+
+.colores{
+    float: right;
+    margin-top: .4%;
+    margin-right: .5%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+}
+
+.senor1{
+	width: 480px;
+	margin-top: 20%;
+	margin-left: 6%;
+}
+.paleta{
+	float: right;
+	margin-top: -15%;
+	margin-right: 5%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.animacion{
+    width: 100%;
+    height: 710px;
+
+}
+.rect{
+     width:80px; 
+     height:80px; 
+     stroke:rgb(216,223,143); 
+     fill:rgb(216,223,143); 
+     fill-opacity:0.5;
+}
+.ellipse{
+    stroke:rgb(129,165,55);
+    fill:rgb(129,165,55);
+    fill-opacity:0.5;
+}
+
+.circulo{
+    stroke:rgb(2,79,75);
+    fill:rgb(2,79,75);
+    fill-opacity:0.5;
+}
+
+.plgno{
+    stroke: none; 
+    fill: none;
+}
+
