@@ -11,8 +11,52 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <div class="container">
-        </div>
+        <!--BIENVENIDO-->
+        <header class="bg-color">
+            <div class="navbar-inverse">
+                <ul class="nav nav-tabs">
+                    <li role="presentation"><a href="#inicio">Inicio</a></li>
+                    <li role="presentation"><a href="#galeria">Galeria</a></li>
+                    <li role="presentation"><a href="#comentarios">Comentarios</a></li>
+                </ul>
+            </div>
+            
+            <div id="#inicio">
+                <div class="container text-center">
+                    <img src="img/logos.png" alt="" class="text-center tumba logo"><br><br>
+                    <button class="btn btn-default"><a href="#galeria"><i class="glyphicon glyphicon-chevron-down"></i></a></button>
+                </div>
+            </div>
+        </header>
+        <!--PAINT-->
+        <!--GALERIA-->
+        <section id="galeria" class=" text-center">
+
+            <div class="container">
+                <h2>Galeria</h2>
+                <p>Algunos dibujos hechos en paint.</p>
+                <div>
+                    <img class="img-dibujos" src="img/preview-676060-650x341-98-1470317006.jpg">
+                    <img class="img-dibujos" src="img/dibujos-abstractos-3.jpg">
+                    <img class="img-dibujos" src="img/descarga.jpg">
+                    <img class="img-dibujos" src="img/abs1.png">
+                </div>
+            </div>
+            
+            <div>
+                <div>
+                    <button class="btn" id="anterior" onclick="plusDivs(-1)">❮ Anterior</button>
+                    <button class="btn" id="siguiente" onclick="plusDivs(1)">Siguiente ❯</button>
+                </div>
+                <div>
+                    <button id="botonUno" class="btn botonNum" onclick="currentDiv(1)">1</button>
+                    <button id="botonDos" class="btn botonNum" onclick="currentDiv(2)">2</button>
+                    <button id="botonTres" class="btn botonNum" onclick="currentDiv(3)">3</button>
+                    <button id="botonCuatro" class="btn botonNum" onclick="currentDivs(4)">4</button>
+                </div>
+            </div>
+        </section>
+        <!--COMENTARIOS-->
         <!--JAVA-SCRIPT-->
         <script type="text/javascript" src="js/app.js"></script>
     </body>
