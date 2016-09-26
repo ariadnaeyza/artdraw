@@ -98,14 +98,6 @@ header ul{
     font-weight: bolder;
     box-shadow: 0px 0px 20px #2F4F4F;
 }
-.paleta{
-    float: right;
-    margin-top: -15%;
-    margin-right: 7%;
-    opacity: 0.5;
-    height: 209px;
-    height: 152px;
-}
 .btn-paintabajo{
     margin-bottom:3rem; 
 }
