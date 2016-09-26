@@ -1,61 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ArtDraw</title>
-        <!--CSS BOOSTRAP-->
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!--CSS-->
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body class="bg-color">
-        <!--BIENVENIDO-->
-        <header>
-            <div class="navbar-inverse">
-                <ul class="nav nav-tabs">
-                    <li role="presentation"><a href="#inicio">Inicio</a></li>
-                    <li role="presentation"><a href="#galeria">Galeria</a></li>
-                    <li role="presentation"><a href="#comentarios">Comentarios</a></li>
-                </ul>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Of Draw</title>
+    <!--CSS BOOSTRAP-->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!--BIENVENIDO-->
+    <header>
+        <ul class="nav nav-tabs">
+            <li role="presentation"><a href="#inicio">Inicio</a></li>
+            <li role="presentation"><a href="#galeria">Galeria</a></li>
+            <li role="presentation"><a href="#paint">Empieza a Dibujar</a></li>
+            <li role="presentation"><a href="#comentarios">Comentarios</a></li>
+        </ul>
+        <div id="#inicio" class="pb-6">
+            <div class="container text-center">
+                <img src="img/logos.png" alt="" class="text-center logo">
+                <br>
+                <button class="btn btn-lg btn-danger"><a href="#galeria"><i class="abajo glyphicon glyphicon-chevron-down"></i></a></button>
             </div>
-            
-            <div id="#inicio">
-                <div class="container text-center">
-                    <img src="img/logos.png" alt="" class="text-center tumba logo"><br><br>
-                    <button class="btn btn-default"><a href="#galeria"><i class="glyphicon glyphicon-chevron-down"></i></a></button>
-                </div>
+        </div>
+    </header>
+    <!--GALERIA-->
+    <section id="galeria" class="text-center">
+        <div class="container">
+            <h2>GALERIA</h2>
+            <p>Algunos dibujos hechos en paint.</p>
+            <div>
+                <img class="img-dibujos" src="img/senor.jpg">
+                <img class="img-dibujos" src="img/dibujos-abstractos-3.jpg">
+                <img class="img-dibujos" src="img/descarga.jpg">
             </div>
-        </header>
-        <!--PAINT-->
-        <!--GALERIA-->
-        <section id="galeria" class=" text-center">
-            <div class="container">
-                <h2>Galeria</h2>
-                <p>Algunos dibujos hechos en paint.</p>
-                <div>
-                    <img class="img-dibujos" src="img/preview-676060-650x341-98-1470317006.jpg">
-                    <img class="img-dibujos" src="img/dibujos-abstractos-3.jpg">
-                    <img class="img-dibujos" src="img/descarga.jpg">
-                    <img class="img-dibujos" src="img/abs1.png">
-                </div>
+        </div>
+        <div>
+            <div>
+                <button class="btn btn-success" id="anterior">❮ Anterior</button>
+                <button class="btn btn-success" id="siguiente">Siguiente ❯</button>
             </div>
             <div>
-                <div>
-                    <button class="btn" id="anterior" onclick="plusDivs(-1)">❮ Anterior</button>
-                    <button class="btn" id="siguiente" onclick="plusDivs(1)">Siguiente ❯</button>
-                </div>
-                <div>
-                    <button id="botonUno" class="btn botonNum" onclick="currentDiv(1)">1</button>
-                    <button id="botonDos" class="btn botonNum" onclick="currentDiv(2)">2</button>
-                    <button id="botonTres" class="btn botonNum" onclick="currentDiv(3)">3</button>
-                    <button id="botonCuatro" class="btn botonNum" onclick="currentDivs(4)">4</button>
-                </div>
+                <button id="botonUno" class="btn btn-success botonNum" >1</button>
+                <button id="botonDos" class="btn btn-success botonNum" >2</button>
+                <button id="botonTres" class="btn btn-success botonNum" >3</button>
+                <br>
             </div>
-        </section>
-        <!--COMENTARIOS-->
-        <!--JAVA-SCRIPT-->
-        <script type="text/javascript" src="js/app.js"></script>
-    </body>
+        </div>
+    </section>
+    <!--PAINT-->
+    <section class="text-center" id="paint">
+       <div class="container pb-10">
+           <h2>¡HORA DE DIBUJAR!</h2>
+           <p>Empieza a sacar tu lado creativo.</p>
+           <table>
+               <tr>
+                   <td class="col-sm-6">
+                       <canvas id="canvas"></canvas>
+                   </td>
+                   <td>
+                       <div class="btn-paint">
+                           <button><img src="img/lapiz.png" id="lapiz"></button>
+                           <button><img src="img/borrador.png" id="borrador"></button>
+                       </div>
+                       <div class="tamanop">
+                           <button id="tamano"></button>
+                           <button id="tamano1"></button>
+                           <button id="tamano2"></button>
+                           <button id="tamano3"></button>
+                           <input type="color" id="colores">
+                       </div>
+                       <button type="submit" id="descargar">Guardar</a>
+                   </td>
+               </tr>
+           </table> 
+       </div>
+       <img src="img/paleta.png" class="paleta">
+    </section>
+    <!--COMENTARIOS-->
+    <section class="hgt-66 text-center bgComentario" id="comentarios">
+       <div class="container">
+           <h2 class="tittle-coment">DEJANOS TU COMENTARIO</h2>
+           <div class="container">
+               <form action="#" id="form" class="well text-center">
+                   <textarea name="mensaje" placeholder="Deja tu comentario..." id="texto" type="text" class="form-control"></textarea>
+                   <div>
+                       <button class="text-left btn btn-info" type="submit" id="resultado" name="comentar">Comentar</button>
+                       <p id="contar" class="text-right contador">140</p>
+                   </div>
+               </form>
+               <div id="comentario" class="well"></div>
+           </div>           
+       </div>
+        <div>
+            <img id="muneco" src="img/paint.png">
+        </div>
+    </section>
+    <!--JAVA-SCRIPT-->
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
 </html>
